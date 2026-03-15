@@ -81,9 +81,6 @@
             const btn = document.getElementById('sendBtn');
             const history = document.getElementById('chatHistory');
             const query = input.value.trim();
-            const data = await response.json();
-            console.log("AI Response Data:", data); // ADD THIS LINE
-            history.innerHTML += `<div>${data.answer}</div>`;
 
             if (!query) return;
 
